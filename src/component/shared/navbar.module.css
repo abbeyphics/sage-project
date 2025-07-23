@@ -1,0 +1,175 @@
+.navCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  padding: 1rem 6rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navItems ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navItems ul li {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.navItems ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navItems button {
+  outline: none;
+  padding: 16px 38px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.navItems button:hover {
+  border: 1.5px solid white;
+  color: white;
+  background-color: transparent;
+  /* transition: ease-in-out; */
+}
+
+.navIcon {
+  display: none;
+}
+
+/* mobile nav */
+.mobileNav {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 398px;
+  position: absolute;
+  /* left: -100%; */
+  top: 120px;
+}
+.closeIcon {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 100%;
+}
+.navItems2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navItems2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.navItems2 ul li {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.navItems2 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navItems2 button {
+  outline: none;
+  padding: 16px 38px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.navItems2 button:hover {
+  border: 1.5px solid black;
+  color: black;
+  background-color: transparent;
+  /* transition: ease-in-out; */
+}
+
+.IoClose {
+  color: black;
+  width: 30px;
+  height: 30px;
+}
+/* mobile nav */
+
+/* Reponsivness */
+
+@media (max-width: 1030px) {
+  nav {
+    padding: 1rem;
+  }
+  .navItems {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 790px) {
+  nav {
+    padding: 2rem;
+    /* margin: 2rem 2rem 0 2rem; */
+    border-radius: 50px;
+  }
+
+  .navItems ul {
+    display: none;
+  }
+  .navItems button {
+    display: none;
+  }
+
+  .navIcon {
+    display: block;
+  }
+
+  .mobileNav {
+    display: flex;
+    align-items: center;
+  }
+
+  .show {
+    position: absolute;
+    transition: all 0.2s ease-in;
+  }
+
+  .hide {
+    left: -100%;
+  }
+}
